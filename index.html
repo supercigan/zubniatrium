@@ -240,7 +240,9 @@
     /* ===== HERO ===== */
     #hero {
       min-height: 100vh;
-      background: linear-gradient(135deg, var(--navy) 0%, #143856 50%, #1a4a60 100%);
+      background:
+        linear-gradient(to bottom, rgba(248,252,251,0) 82%, #f8fcfb 100%),
+        linear-gradient(135deg, var(--navy) 0%, #143856 50%, #1a4a60 100%);
       display: flex;
       align-items: center;
       padding-top: 68px;
@@ -256,17 +258,6 @@
       width: 70%;
       height: 170%;
       background: radial-gradient(ellipse, rgba(30, 123, 110, 0.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    #hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 90px;
-      background: linear-gradient(to bottom, rgba(248,252,251,0) 0%, #f8fcfb 100%);
       pointer-events: none;
     }
 
