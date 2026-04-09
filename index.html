@@ -79,16 +79,16 @@
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(190, 227, 223, 0.15);
-      transition: all 0.3s ease;
     }
 
     .nav-inner {
       display: flex;
+      flex-direction: row;
       align-items: center;
-      justify-content: space-between;
       flex-wrap: nowrap;
       padding: 0 2rem;
       height: 68px;
+      overflow: hidden;
     }
 
     .logo {
@@ -140,10 +140,9 @@
     .nav-links {
       display: flex;
       align-items: center;
-      flex-shrink: 0;
-      white-space: nowrap;
-      gap: 32px;
+      gap: 28px;
       list-style: none;
+      margin-left: auto;
     }
 
     .nav-links a {
@@ -172,6 +171,10 @@
     /* Hamburger */
     .hamburger {
       display: none;
+      position: absolute;
+      right: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
       flex-direction: column;
       gap: 5px;
       cursor: pointer;
