@@ -240,14 +240,26 @@
     /* ===== HERO ===== */
     #hero {
       min-height: 100vh;
-      background:
-        linear-gradient(to bottom, rgba(248,252,251,0) 82%, #f8fcfb 100%),
-        linear-gradient(135deg, var(--navy) 0%, #143856 50%, #1a4a60 100%);
+      background: linear-gradient(135deg, var(--navy) 0%, #143856 50%, #1a4a60 100%);
       display: flex;
       align-items: center;
       padding-top: 68px;
+      padding-bottom: 80px;
       position: relative;
       overflow: hidden;
+    }
+
+    .hero-wave {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      line-height: 0;
+    }
+
+    .hero-wave svg {
+      display: block;
+      width: 100%;
     }
 
     #hero::before {
@@ -1107,8 +1119,12 @@
       </div>
     </div>
     <div class="scroll-hint">
-      <span>Zjistit více</span>
       <div class="arrow"></div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 54" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,32 C240,54 480,10 720,32 C960,54 1200,10 1440,32 L1440,54 L0,54 Z" fill="#f8fcfb"/>
+      </svg>
     </div>
   </section>
 
